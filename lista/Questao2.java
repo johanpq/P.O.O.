@@ -8,8 +8,6 @@ import java.util.Scanner;
 public class Questao2 {
 
     public static void main(String[] args) {
-        double nota1, nota2, nota3;
-
         Scanner notas = new Scanner(System.in);
 
         System.out.print("Informe a nota 1: ");
