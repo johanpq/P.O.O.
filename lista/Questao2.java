@@ -23,5 +23,6 @@ public class Questao2 {
 
         System.out.printf("A media eh: %g", notaAritmetica);
 
+        notas.close();
     }
 }
