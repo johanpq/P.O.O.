@@ -1,0 +1,1 @@
+* Para comparar string utiliza o método equals.
