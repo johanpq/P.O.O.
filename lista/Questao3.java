@@ -22,6 +22,8 @@ public class Questao3 {
 
         System.out.printf("O angulo convertido eh: %g", converterRadianos);
         System.out.printf("Seno: %g\nCosseno: %g\nTangente: %g\nCossecante: %g\nSecante: %g\nCotangente: %g", seno, cosseno, tangente, cossecante, secante, cotangente);
+
+        anguloEmGraus.close();
     }
 }
 
