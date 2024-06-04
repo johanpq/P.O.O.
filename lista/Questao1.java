@@ -21,5 +21,8 @@ public class Questao1 {
         area = pickBaseValue * pickHeightValue;
 
         System.out.printf("A área é: %g", area);
+
+        baseValue.close();;
+        heightValue.close();
     } 
 }
