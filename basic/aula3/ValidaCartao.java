@@ -9,6 +9,8 @@ public class ValidaCartao {
 
         int mesAtual, anoAtual;
 
+        boolean expirado = true;
+
         Calendar calendar = Calendar.getInstance();
 
         anoAtual = calendar.get(Calendar.YEAR);
@@ -25,12 +27,21 @@ public class ValidaCartao {
         System.out.print("Codigo: ");
         codigo = input.nextLine();
 
-        System.out.print("Mes da validade: ");
-        mes = input.nextInt();
+        do {
+            System.out.print("Mes da validade: ");
+            mes = input.nextInt();
+    
+            System.out.print("Ano da validade: ");
+            ano = input.nextInt();
 
-        System.out.print("Ano da validade: ");
-        ano = input.nextInt();
+            expirado = (ano < anoAtual) || (ano == anoAtual && mes < mesAtual);
 
+            if(expirado) {
+                System.out.print("Expirado! Tente novamente.\n");
+            }
+        } while(expirado);
+
+        System.out.print("Cartao validado com sucesso!\n");
         
         System.out.printf("Nome: %s%nNumero do cartao: %s%nCodigo: %s%nMes da validade: %d%nAno da validade: %d%n", nome, numero, codigo, mes, ano);
 
