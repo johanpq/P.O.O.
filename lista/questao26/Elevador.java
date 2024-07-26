@@ -1,10 +1,10 @@
 package lista.questao26;
 
 class Elevador {
-    int numAndarAtual;
-    int totalAndares;
-    int capaciElevador;
-    int pessoaNoElevador;
+    private int numAndarAtual;
+    private int totalAndares;
+    private int capaciElevador;
+    private int pessoaNoElevador;
 
 
     Elevador(int numAndarAtual, int totalAndares, int capaciElevador, int pessoaNoElevador) {
