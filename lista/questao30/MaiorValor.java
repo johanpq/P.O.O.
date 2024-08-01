@@ -3,51 +3,43 @@ package lista.questao30;
 public class MaiorValor {
     
     public static int MaiorDoisValores(int a, int b) {
-        if(a > b) {
-            return a;
-        } else {
-            return b;
+        int maior = a;
+        if(b > maior) {
+            maior = b;
         }
+        return maior;
     }
 
     public static double MaiorDoisValores(double a, double b) {
-        if(a > b) {
-            return a;
-        } else {
-            return b;
-        }
+        double maior = a;
+        if(b > maior) {
+            maior = b;
+        } 
+        return maior;
     }
 
     public static int MaiorTresValores(int a, int b, int c) {
         int maior = a;
 
-        if(a > b && a > c) {
-            maior = a;
-        }
-
-        if(b > a && b > c) {
+        if(b > maior) {
             maior = b;
         }
 
-        if(c > a && c > b) {
+        if(c > maior) {
             maior = c;
         }
-
+ 
         return maior;
     }
 
     public static double MaiorTresValores(double a, double b, double c) {
         double maior = a;
 
-        if(a > b && a > c) {
-            maior = a;
-        }
-
-        if(b > a && b > c) {
+        if(b > maior) {
             maior = b;
         }
 
-        if(c > a && c > b) {
+        if(c > maior) {
             maior = c;
         }
 
@@ -57,19 +49,15 @@ public class MaiorValor {
     public static int MaiorQuatroValores(int a, int b, int c, int d) {
         int maior = a;
 
-        if(a > b && a > c && a >d) {
-            maior = a;
-        }
-
-        if(b > a && b > c && b > d) {
+        if(b > maior) {
             maior = b;
         }
 
-        if(c > a && c > b && c > d) {
+        if(c > maior) {
             maior = c;
         }
 
-        if(d > a && d > b && d > c) {
+        if(d > maior) {
             maior = d;
         }
 
@@ -79,19 +67,15 @@ public class MaiorValor {
     public static double MaiorQuatroValores(double a, double b, double c, double d) {
         double maior = a;
 
-        if(a > b && a > c && a >d) {
-            maior = a;
-        }
-
-        if(b > a && b > c && b > d) {
+        if(b > maior) {
             maior = b;
         }
 
-        if(c > a && c > b && c > d) {
+        if(c > maior) {
             maior = c;
         }
 
-        if(d > a && d > b && d > c) {
+        if(d > maior) {
             maior = d;
         }
 
@@ -101,23 +85,19 @@ public class MaiorValor {
     public static int MaiorCincoValores(int a, int b, int c, int d, int e) {
         int maior = a;
 
-        if(a > b && a > c && a > d && a > e) {
-            maior = a;
-        }
-
-        if(b > a && b > c && b > d && b > e) {
+        if(b > maior) {
             maior = b;
         }
 
-        if(c > a && c > b && c > d && c > d) {
+        if(c > maior) {
             maior = c;
         }
 
-        if(d > a && d > b && d > c && d > e) {
+        if(d > maior) {
             maior = d;
         }
 
-        if(e > a && e > b && e > c && e > d) {
+        if(e > maior) {
             maior = e;
         }
 
@@ -127,23 +107,19 @@ public class MaiorValor {
     public static double MaiorCincoValores(double a, double b, double c, double d, double e) {
         double maior = a;
 
-        if(a > b && a > c && a > d && a > e) {
-            maior = a;
-        }
-
-        if(b > a && b > c && b > d && b > e) {
+        if(b > maior) {
             maior = b;
         }
 
-        if(c > a && c > b && c > d && c > d) {
+        if(c > maior) {
             maior = c;
         }
 
-        if(d > a && d > b && d > c && d > e) {
+        if(d > maior) {
             maior = d;
         }
 
-        if(e > a && e > b && e > c && e > d) {
+        if(e > maior) {
             maior = e;
         }
 
