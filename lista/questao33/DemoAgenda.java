@@ -6,7 +6,6 @@ public class DemoAgenda {
 
         myAgenda.novoCompromisso("18:00", 5, 5, 2012, "Sei lá");
 
-        myAgenda.listaDia(20, 40, 50);
-        
+        myAgenda.listaDia(5, 5, 2012);
     }
 }

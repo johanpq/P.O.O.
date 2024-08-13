@@ -18,7 +18,7 @@ public class EntradaEmAgenda {
     }
 
     public String toString() {
-        return dia/mes/ano + " sobre: " + assunto + " as: " + hora;
+        return dia + "/" + mes + "/" + ano + " sobre: " + assunto + " as: " + hora;
     }
 }
 

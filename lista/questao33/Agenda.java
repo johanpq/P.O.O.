@@ -17,10 +17,13 @@ public class Agenda {
     }
 
     void listaDia(int dia, int mes, int ano) {
-        boolean ehNoDia = myAgenda.ehNoDia(dia, mes, ano);
-
-        if(ehNoDia) {
-            System.out.printf("%d/%d/%d", dia, mes, ano);
+        // Itera sobre toda a agenda
+        for (EntradaEmAgenda i : agenda) {
+            if(i.ehNoDia(dia, mes, ano)) { 
+                System.out.printf(i.toString());
+            } else {
+                System.out.println("Nenhum compromisso para os dias " + dia + "/" + mes + "ano");
+            }
         }
     }
 }
