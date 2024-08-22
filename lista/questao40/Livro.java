@@ -11,8 +11,21 @@ public class Livro {
     public Livro(String titulo, String editora, boolean capaDura, boolean capaNormal, boolean marcador) {
         this.titulo = titulo;
         this.editora = editora;
-        capaDura ? this.capaDura = capaDura : this.capaDura = false;
-        capaNormal ? this.capaNormal = capaNormal : this.capaNormal = false;
+        if(capaDura) {
+            this.capaDura = true;
+            this.capaNormal = false;
+        } else {
+            this.capaDura = false;
+            this.capaNormal = true;
+        }
+        if(capaNormal) {
+            this.capaNormal = true;
+            this.capaDura = false;
+            
+        } else {
+            this.capaDura = true;
+            this.capaNormal = false;
+        }
         this.marcador = marcador;
     }
 
