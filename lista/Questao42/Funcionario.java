@@ -21,8 +21,8 @@ public class Funcionario {
         salario += valorAumento;
     }
 
-    public void ganhoAnual() {
-
+    public double ganhoAnual() {
+        return (salario * 12) + salario;
     }
 
     public String toString() {

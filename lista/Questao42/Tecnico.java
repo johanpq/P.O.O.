@@ -8,6 +8,10 @@ public class Tecnico extends Assistente {
         this.bonusSalarial = bonusSalarial;
     }
 
+    public double ganhoAnual() {
+        return (getSalarioFuncionario() * 12) + (getSalarioFuncionario() + bonusSalarial);
+    }
+
     public String toString() {
         String res = "";
         String getNomeTecnico = getNomeFuncionario();
@@ -18,6 +22,7 @@ public class Tecnico extends Assistente {
         res += "Numero de matricula: " + getMatriculaTecnico + "\n";
         res += "Salario: " + getSalarioTecnico + "\n";
         res += "Bonus salarial: " + bonusSalarial + "\n";
+        res += "Ganho anual " + ganhoAnual() + "\n";
         return res;
     }
 }

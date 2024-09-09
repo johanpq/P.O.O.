@@ -2,10 +2,20 @@ package lista.Questao42;
 
 public class Administrativo extends Assistente {
     private String turno;
+    private double adicionalNoturno;
 
-    public Administrativo(String nome, double salario, int numeroMatricula, String turno) {
+    public Administrativo(String nome, double salario, int numeroMatricula, String turno, double adicionalNoturno) {
         super(nome, salario, numeroMatricula);
         this.turno = turno;
+        this.adicionalNoturno = adicionalNoturno;
+    }
+
+    public double ganhoAnual() {
+        if(turno.equals("Noite")) {
+            return (getSalarioFuncionario() * 12) + (getSalarioFuncionario() + adicionalNoturno);
+        } else {
+            return super.ganhoAnual();
+        }
     }
 
     public String toString() {
@@ -18,6 +28,7 @@ public class Administrativo extends Assistente {
         res += "Matricula: " + getMatriculaAdministrativo + "\n";
         res += "Salario: " + getSalarioAdministrativo + "\n";
         res += "Turno: " + turno + "\n";
+        res += "Ganho anual " + ganhoAnual() + "\n";
         return res;
     }
 }
