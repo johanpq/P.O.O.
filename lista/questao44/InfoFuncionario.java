@@ -12,11 +12,11 @@ public class InfoFuncionario {
         this.salario = salario;
     }
 
-    public InfoFuncionario(int id, String nome, int horasTrabalhadas, double salario) {
+    public InfoFuncionario(int id, String nome, int horasTrabalhadas, double valorPorHora) {
         this.id = id;
         this.nome = nome;
         this.horasTrabalhadas = horasTrabalhadas;
-        this.salario = horasTrabalhadas * salario; 
+        this.salario = horasTrabalhadas * valorPorHora; 
     }
 
     public String toString() {
