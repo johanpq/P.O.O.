@@ -1,28 +1,27 @@
 package lista.questao44;
 
 public class InfoFuncionario {
-    private int id;
     private String nome;
     private int horasTrabalhadas;
+    private double salarioPorHora;
     private double salario;
 
-    public InfoFuncionario(int id, String nome, double salario) {
-        this.id = id;
+    public InfoFuncionario(String nome) {
         this.nome = nome;
-        this.salario = salario;
+        this.horasTrabalhadas = 0;
+        this.salarioPorHora = 0.0;
+        this.salario = 0.0;
     }
 
-    public InfoFuncionario(int id, String nome, int horasTrabalhadas, double valorPorHora) {
-        this.id = id;
+    public InfoFuncionario(String nome, int horasTrabalhadas, double salarioPorHora) {
         this.nome = nome;
         this.horasTrabalhadas = horasTrabalhadas;
-        this.salario = horasTrabalhadas * valorPorHora; 
+        this.salarioPorHora = salarioPorHora;
+        this.salario = horasTrabalhadas * salarioPorHora; 
     }
 
     public String toString() {
         String res = "";
-
-        res += "Id: " + id + "\n";
         res += "Nome: " + nome + "\n";
         if(horasTrabalhadas != 0) {
             res += "Horas trabalhadas: " + horasTrabalhadas + " horas" + "\n";
